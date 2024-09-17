@@ -85,8 +85,8 @@ def main():
         model = st.selectbox("Modeli i vetures", car_models)
         year = st.slider("Viti i prodhimit(jo me te vjeter se 2015)", min_value=2015, max_value=2023)
         registration = st.selectbox("Cakto regjistrimin e vetures",registrations)
-        name = st.selectbox("Cakto emrin vozitesit",names)
-        surname = st.selectbox("Cakto mbiemrin vozitesit",surnames)
+        name = st.text_input("Shkruaj emrin e vozitesit")
+        surname = st.text_input("Shkruaj mbiemrin e vozitesit")
         phone = st.text_input("Shkruaj numrin e telefonit")
         birthday = st.date_input("Vendos datelindjen(jo nen 18vjec)",
                          min_value=datetime(1960, 1, 1),
